@@ -1,0 +1,45 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/Users/isokawa-yohei/.nodebrew/current/bin/npm',
+1 verbose cli   'link' ]
+2 info using npm@2.7.4
+3 info using node@v0.12.0
+4 verbose node symlink /Users/isokawa-yohei/.nodebrew/current/bin/node
+5 verbose linkPkg /Users/isokawa-yohei/Work/Github/generator-starter-kit
+6 silly gentlyRm /Users/isokawa-yohei/.nodebrew/current/lib/node_modules/generator-starter-kit is being purged
+7 verbose gentlyRm don't care about contents; nuking /Users/isokawa-yohei/.nodebrew/current/lib/node_modules/generator-starter-kit
+8 silly vacuum-fs purging /Users/isokawa-yohei/.nodebrew/current/lib/node_modules/generator-starter-kit
+9 silly vacuum-fs quitting because other entries in /Users/isokawa-yohei/.nodebrew/current/lib/node_modules
+10 verbose link build target /Users/isokawa-yohei/.nodebrew/current/lib/node_modules/generator-starter-kit
+11 verbose install where, what [ '/Users/isokawa-yohei/Work/Github/generator-starter-kit', [] ]
+12 verbose install where, deps [ '/Users/isokawa-yohei/Work/Github/generator-starter-kit',
+12 verbose install   [ 'yeoman-generator' ] ]
+13 verbose install where, peers [ '/Users/isokawa-yohei/Work/Github/generator-starter-kit', [] ]
+14 info preinstall generator-starter-kit@0.1.0
+15 verbose already installed skipping yeoman-generator@^0.18.10 /Users/isokawa-yohei/Work/Github/generator-starter-kit
+16 silly install resolved []
+17 info build /Users/isokawa-yohei/Work/Github/generator-starter-kit
+18 verbose linkStuff [ false, false, false, '/Users/isokawa-yohei/Work/Github' ]
+19 info linkStuff generator-starter-kit@0.1.0
+20 verbose linkBins generator-starter-kit@0.1.0
+21 verbose linkMans generator-starter-kit@0.1.0
+22 verbose rebuildBundles generator-starter-kit@0.1.0
+23 verbose rebuildBundles [ 'yeoman-generator' ]
+24 info install generator-starter-kit@0.1.0
+25 info postinstall generator-starter-kit@0.1.0
+26 info prepublish generator-starter-kit@0.1.0
+27 info build /Users/isokawa-yohei/.nodebrew/current/lib/node_modules/generator-starter-kit
+28 verbose stack Error: ENOENT, open '/Users/isokawa-yohei/.nodebrew/current/lib/node_modules/generator-starter-kit/package.json'
+28 verbose stack     at Error (native)
+29 verbose cwd /Users/isokawa-yohei/Work/Github/generator-starter-kit
+30 error Darwin 13.4.0
+31 error argv "node" "/Users/isokawa-yohei/.nodebrew/current/bin/npm" "link"
+32 error node v0.12.0
+33 error npm  v2.7.4
+34 error path /Users/isokawa-yohei/.nodebrew/current/lib/node_modules/generator-starter-kit/package.json
+35 error code ENOENT
+36 error errno -2
+37 error enoent ENOENT, open '/Users/isokawa-yohei/.nodebrew/current/lib/node_modules/generator-starter-kit/package.json'
+37 error enoent This is most likely not a problem with npm itself
+37 error enoent and is related to npm not being able to find a file.
+38 verbose exit [ -2, true ]
