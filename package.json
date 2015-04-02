@@ -2,33 +2,35 @@
   "name": "generator-starter-kit",
   "version": "0.1.0",
   "description": "web frontend starter kit",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "yuhiisk/generator-starter-kit",
+  "author": {
+    "name": "Youhei Isokawa",
+    "email": "youheiisokawa@gmail.com",
+    "url": "https://github.com/yuhiisk"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:yuhiisk/generator-starter-kit.git"
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
   },
   "files": [
-	"app",
-	"router"
+    "app"
   ],
   "keywords": [
-    "yo",
-    "yeoman",
     "yeoman-generator",
     "html5",
     "gulp",
     "frontend"
   ],
-  "author": "Youhei Isokawa",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/yuhiisk/generator-starter-kit/issues"
-  },
-  "homepage": "https://github.com/yuhiisk/generator-starter-kit",
   "dependencies": {
-    "yeoman-generator": "^0.18.10"
+    "yeoman-generator": "^0.18.9",
+    "chalk": "^1.0.0",
+    "yosay": "^1.0.2"
+  },
+  "devDependencies": {
+    "mocha": "*"
   }
 }
