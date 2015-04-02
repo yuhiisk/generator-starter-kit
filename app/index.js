@@ -21,20 +21,25 @@ module.exports = yeoman.generators.Base.extend({
       name: 'someOption',
       message: 'Would you like to enable this option?',
       default: true
+    }, {
+      name: 'yourname',
+      message: 'What is your name?',
+      default: 'someuser'
     }];
 
     this.prompt(prompts, function (props) {
       this.someOption = props.someOption;
-
+      this.yourname = props.yourname;
       done();
     }.bind(this));
   },
 
   writing: {
     app: function () {
-      this.fs.copy(
+      this.fs.copyTpl(
         this.templatePath('_package.json'),
-        this.destinationPath('package.json')
+        this.destinationPath('package.json'),
+        { yourname: this.yourname }
       );
       this.fs.copy(
         this.templatePath('_bower.json'),
